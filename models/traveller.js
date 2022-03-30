@@ -31,7 +31,10 @@ Traveller.prototype.getJourneysByMinDistance = function (minDistance) {
 };
 
 Traveller.prototype.calculateTotalDistanceTravelled = function () {
-
+    const result = this.journeys.reduce((counter, journey) => {
+      return counter + journey.distance;
+    },0);
+    return result;
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
