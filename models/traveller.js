@@ -49,16 +49,5 @@ Traveller.prototype.getUniqueModesOfTransport = function () {
   return uniqueTransport;
 };
 
-// Traveller.prototype.getUniqueModesOfTransport = function () {
-//   const uniqueTransport = [];
-//   this.journeys.forEach((journey) => {
-//     if (uniqueTransport.some((transport) => {
-//       return journey.transport !== transport;
-//     })){
-//       uniqueTransport.push(journey.transport);
-//     }   
-//   });
-//   return uniqueTransport;
-// };
 
 module.exports = Traveller;
